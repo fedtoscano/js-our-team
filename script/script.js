@@ -35,3 +35,12 @@ const team =[
         pic:"barbara-ramos-graphic-designer.jpg"
     }
 ]
+
+
+team.forEach(member => {
+    for (const key in member) {
+        if (member.hasOwnProperty.call(member, key)) {
+            console.log(member[key]);
+        }
+    }
+});
