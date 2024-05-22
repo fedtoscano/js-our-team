@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fullsite{
+    background-color: #f5f5f0;
+}
+
+header{
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#our-team{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5em;
+}
+
+article{
+    width: calc((80% / 3) - 2em);
+    height: calc(100% / 3);
+    background-color: white;
+    border-radius: 15px;
+}
+
+#member-img{
+    width: 100%;
+}
+
+#text-container{
+    text-align: center;
+    padding: 1em;
+}

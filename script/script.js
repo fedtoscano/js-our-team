@@ -55,14 +55,16 @@ const team =[
 // }
 
 
+// ! BONUS 1
+// for (let index = 0; index < 6; index++) {
+//     const teamContainer = document.querySelector(".our-team")
+//     const newParagraph = document.createElement("p")
+//     const memberImage = document.createElement("img")
+//         memberImage.src = `./img/${team[index].pic}`
+//         memberImage.alt = `A profile picture of ${team[index].name}`
 
-for (let index = 0; index < 6; index++) {
-    const teamContainer = document.querySelector(".our-team")
-    const newParagraph = document.createElement("p")
-    const memberImage = document.createElement("img")
-        memberImage.src = `./img/${team[index].pic}`
-        memberImage.alt = `A profile picture of ${team[index].name}`
+//     newParagraph.append(`${team[index].name} ${team[index].role}`, memberImage)
+//     teamContainer.appendChild(newParagraph)
+// }
 
-    newParagraph.append(`${team[index].name} ${team[index].role}`, memberImage)
-    teamContainer.appendChild(newParagraph)
-}
+//! BONUS 2
