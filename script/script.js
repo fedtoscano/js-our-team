@@ -45,9 +45,24 @@ const team =[
 //     }
 // });
 
+
+// ! MILESTONE 2
+// for (let index = 0; index < 6; index++) {
+//     const teamContainer = document.querySelector(".our-team")
+//     const newParagraph = document.createElement("p")
+//     newParagraph.append(`${team[index].name} ${team[index].role} ${team[index].pic}`)
+//     teamContainer.appendChild(newParagraph)
+// }
+
+
+
 for (let index = 0; index < 6; index++) {
     const teamContainer = document.querySelector(".our-team")
     const newParagraph = document.createElement("p")
-    newParagraph.append(`${team[index].name} ${team[index].role} ${team[index].pic}`)
+    const memberImage = document.createElement("img")
+        memberImage.src = `./img/${team[index].pic}`
+        memberImage.alt = `A profile picture of ${team[index].name}`
+
+    newParagraph.append(`${team[index].name} ${team[index].role}`, memberImage)
     teamContainer.appendChild(newParagraph)
 }
