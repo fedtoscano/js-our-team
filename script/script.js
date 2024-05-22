@@ -68,3 +68,27 @@ const team =[
 // }
 
 //! BONUS 2
+const ourTeamSectionElement = document.querySelector("#our-team");
+
+team.forEach(member => {
+    const memberEl = document.createElement("article");
+    const imageContainerEl = document.createElement("div")
+    const imageEl = document.createElement("img")
+        imageEl.id = "member-img"
+        imageEl.src = `./img/${member.pic}`
+        imageEl.alt = `A profile picture of ${member.name}`
+    const textContainerEl= document.createElement("div")
+        textContainerEl.id = "text-container"
+    const displayNameEl = document.createElement("p")
+        displayNameEl.append(member.name) 
+    const displayRoleEl = document.createElement("p")
+        displayRoleEl.append(member.role)
+
+    imageContainerEl.appendChild(imageEl)
+    textContainerEl.appendChild(displayNameEl)
+    textContainerEl.appendChild(displayRoleEl)
+    memberEl.appendChild(imageContainerEl);
+    memberEl.appendChild(textContainerEl);
+
+    ourTeamSectionElement.appendChild(memberEl)
+});
