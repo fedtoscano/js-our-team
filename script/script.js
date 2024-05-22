@@ -36,11 +36,18 @@ const team =[
     }
 ]
 
+//! MILESTONE 1
+// team.forEach(member => {
+//     for (const key in member) {
+//         if (member.hasOwnProperty.call(member, key)) {
+//             console.log(member[key]);
+//         }
+//     }
+// });
 
-team.forEach(member => {
-    for (const key in member) {
-        if (member.hasOwnProperty.call(member, key)) {
-            console.log(member[key]);
-        }
-    }
-});
+for (let index = 0; index < 6; index++) {
+    const teamContainer = document.querySelector(".our-team")
+    const newParagraph = document.createElement("p")
+    newParagraph.append(`${team[index].name} ${team[index].role} ${team[index].pic}`)
+    teamContainer.appendChild(newParagraph)
+}
